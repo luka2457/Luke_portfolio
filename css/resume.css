@@ -200,5 +200,25 @@ a:hover, a:focus, a:active {
   background-color: rgb(56, 118, 189);
   border-color: rgb(56, 118, 189);
   color: #fff;
+}
 
+.hoverSymbol {
+  position: relative;
+}
+
+.hoverSymbol .tooltiptext {
+  visibility: hidden;
+  font-size: 15px;
+  background-color: #fff;
+  color: rgb(56, 118, 189);
+  text-align: center;
+  border-radius: 6px;
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  top: 100%;
+}
+
+.hoverSymbol:hover .tooltiptext {
+  visibility: visible;
 }
